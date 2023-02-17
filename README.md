@@ -1,7 +1,14 @@
 # Monitoring Machine Learning Models in Production
 
-> Note: I forked this repository from [cd0583-model-scoring-and-drift-using-evidently](https://github.com/udacity/cd0583-model-scoring-and-drift-using-evidently) and followed the instructions below. The final app is deployed on
-> []()
+> I forked this repository from [cd0583-model-scoring-and-drift-using-evidently](https://github.com/udacity/cd0583-model-scoring-and-drift-using-evidently) and followed the instructions below. The final app is deployed on
+> 
+> [https://model-scoring-evidently-demo.herokuapp.com/](https://model-scoring-evidently-demo.herokuapp.com/)
+>
+> *That main link shows the model performance for February; check other links/dashboards mentioned below.*
+>
+> The complete monitoring is implemented in `main.py`: We create HTML dashboards with Evidently and save them to `./static`. Then, a FastAPI web app is instantiated to which we pass all the content in that `./static` folder.
+
+---
 
 In this tutorial, we will learn how to monitor machine learning models in production using an open-source framework called [Evidently](https://github.com/evidentlyai/evidently). In their own words - *"Evidently helps analyze and track data and ML model quality throughout the model lifecycle. You can think of it as an evaluation layer that fits into the existing ML stack."*
 
